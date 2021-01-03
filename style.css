@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 69px;
+    position: sticky;
+    background-color: black;
+    top: 0px;
+    z-index: 10;
+    border-bottom: 2px solid white;
+}
+
+header nav{
+    float: right;
+    height: 100%;
+    top: 0;
+}
+
+a {
+    height: 100%;
+    display: table;
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 20px;
+}
+
+nav li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    text-decoration: underline;
+    color: white;
+}
+
+.banner{
+    background-image: url(./resources/medium.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-color: orangered;
+}
+
+/*Project section*/
+#projects{
+    background-color: rgba(73, 72, 72, 0.788);
+    color: white;
+}
+
+.projects{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(201, 200, 200, 0.911);
+    width: 100%;
+    color: black;
+}
+
+.card{
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    box-shadow: 0 10px 6px -6px black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-links .fa-external-link-square-alt,
+.card-links .fa-github {
+    font-size: 32px;
+    
+}
+
+a:hover .fa-external-link-square-alt{
+    color: blue;
+}
+
+a:hover .fa-github{
+    color: rgba(71, 65, 65, 0.411);
+}
+
+
+/*about section*/ 
+
+#about{
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.biker-animation svg{
+    height: 80%;
+    width: 70%;
+}
+/*
+#front-wheel, 
+#back-wheel{
+    animation: wheel 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man-on-bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+*/
